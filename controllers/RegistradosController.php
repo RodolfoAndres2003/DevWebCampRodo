@@ -10,7 +10,6 @@ use Model\Usuario;
 
 class RegistradosController{
     public static function index(Router $router){
-        is_auth();
         if(!is_admin()){
             header('Location: /login');
         }
