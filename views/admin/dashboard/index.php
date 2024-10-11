@@ -1,5 +1,5 @@
 <h2 class="dashboard__heading"><?php echo $titulo; ?></h2>
-<main class="bloques">
+<div class="bloques">
     <div class="bloques__grid">
     <div class="bloque">
             <h3 class="bloque__heading">Total Ingresos</h3>
@@ -38,4 +38,4 @@
             <?php } ?>
         </div>
     </div>
-</main>
+</div>
