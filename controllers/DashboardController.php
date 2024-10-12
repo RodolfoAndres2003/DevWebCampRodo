@@ -26,7 +26,7 @@ class DashboardController{
         $menos_disponibles = Evento::ordenarLimite('disponibles', 'ASC', 5);
         $mas_disponibles = Evento::ordenarLimite('disponibles', 'DESC', 5);
         
-        $router->render('admin/dashboard/index',[
+        $router->render('/admin/dashboard/index',[
             'titulo' => 'Panel de Administracion',
             'registros' => $registros,
             'ingresos' => $ingresos,
