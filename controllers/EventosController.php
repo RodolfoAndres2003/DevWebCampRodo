@@ -33,7 +33,7 @@ class EventosController{
             $evento->ponente = Ponente::find($evento->ponente_id);
             
         }
-        $router->render('admin/eventos/index',[
+        $router->render('/admin/eventos/index',[
             'titulo' => 'Conferencias y Workshops',
             'eventos' => $eventos,
             'paginacion' => $paginacion->paginacion()
