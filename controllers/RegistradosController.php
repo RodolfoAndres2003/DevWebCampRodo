@@ -31,7 +31,7 @@ class RegistradosController{
             $registro->usuario = Usuario::find($registro->usuario_id);
             $registro->paquete = Paquete::find($registro->paquete_id);
         }
-        $router->render('admin/registrados/index',[
+        $router->render('/admin/registrados/index',[
             'titulo' => 'Usuarios Registrados',
             'registros' => $registros,
             'paginacion' => $paginacion->paginacion()
