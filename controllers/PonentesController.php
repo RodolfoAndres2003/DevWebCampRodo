@@ -29,7 +29,7 @@ class PonentesController{
         }
         $ponentes = Ponente::paginar($registros_por_pagina, $paginacion->offset());
         
-        $router->render('admin/ponentes/index',[
+        $router->render('/admin/ponentes/index',[
             'titulo' => 'Ponentes / Conferencistas',
             'ponentes' => $ponentes,
             'paginacion' => $paginacion->paginacion()
@@ -88,7 +88,7 @@ class PonentesController{
             }
         }
 
-        $router->render('admin/ponentes/crear',[
+        $router->render('/admin/ponentes/crear',[
             'titulo' => 'Registrar Ponente',
             'alertas' => $alertas,
             'ponente' => $ponente,
@@ -157,7 +157,7 @@ class PonentesController{
             }
         }
 
-        $router->render('admin/ponentes/editar',[
+        $router->render('/admin/ponentes/editar',[
             'titulo' => 'Actualizar Ponente',
             'alertas' => $alertas,
             'ponente' => $ponente,
